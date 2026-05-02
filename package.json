@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch data/cities.json --port 9000"
   },
   "dependencies": {
+    "flag-icons": "^7.5.0",
+    "json-server": "^1.0.0-beta.15",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^6.30.3"
