@@ -31,14 +31,14 @@ function Map() {
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
-  
-const [mapLat,mapLng] = useUrlPosition();
+
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
     function () {
       if (mapLat && mapLng)
         // eslint-disable-next-line react-hooks/set-state-in-effect
-        setMapPosition([+mapLat, +mapLng]);
+        setMapPosition([mapLat, mapLng]);
     },
     [mapLat, mapLng],
   );
@@ -73,10 +73,25 @@ const [mapLat,mapLng] = useUrlPosition();
           <Marker
             position={[city.position.lat, city.position.lng]}
             key={city.id}
+            eventHandlers={{
+              click: () => {
+                setMapPosition([city.position.lat, city.position.lng]);
+              },
+            }}
           >
             <Popup>
-              <span>{flagEmojiToPNG(city.emoji)}</span>{" "}
+              <span className={styles.emoji}>
+                {city.emoji && city.emoji.length === 2 ? (
+                  <img
+                    src={`https://flagcdn.com/24x18/${city.emoji.toLowerCase()}.png`}
+                    alt="flag"
+                  />
+                ) : (
+                  flagEmojiToPNG(city.emoji)
+                )}
+              </span>{" "}
               <span>{city.cityName}</span>
+              <ChangeCenter position={mapPosition} />
             </Popup>
           </Marker>
         ))}
