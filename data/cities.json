@@ -10,7 +10,7 @@
         "lat": 38.727881642324164,
         "lng": -9.140900099907554
       },
-      "id": 73930385
+      "id": "73930385"
     },
     {
       "cityName": "Madrid",
@@ -22,7 +22,7 @@
         "lat": 40.46635901755316,
         "lng": -3.7133789062500004
       },
-      "id": 17806751
+      "id": "17806751"
     },
     {
       "cityName": "Berlin",
@@ -34,7 +34,116 @@
         "lat": 52.53586782505711,
         "lng": 13.376933665713324
       },
-      "id": 98443197
+      "id": "98443197"
+    },
+    {
+      "cityName": "Tall Rif‘at",
+      "country": "Syrian Arab Republic (the)",
+      "emoji": "SY",
+      "date": "2026-05-12T20:36:31.990Z",
+      "notes": "test",
+      "position": {
+        "lat": "36.44823979331258",
+        "lng": "37.028029256893404"
+      },
+      "id": "fxsD8mwulG8"
+    },
+    {
+      "cityName": "Compreignac",
+      "country": "France",
+      "emoji": "FR",
+      "date": "2026-05-12T20:45:39.935Z",
+      "notes": "test2",
+      "position": {
+        "lat": "46.01943154116029",
+        "lng": "1.3124474519896625"
+      },
+      "id": "pM9vII4je-I"
+    },
+    {
+      "cityName": "Tadif",
+      "country": "Syrian Arab Republic (the)",
+      "emoji": "SY",
+      "date": "2026-05-12T20:53:29.814Z",
+      "notes": "",
+      "position": {
+        "lat": "36.356808678222144",
+        "lng": "37.6465550834743"
+      },
+      "id": "rvtCGIYKs7s"
+    },
+    {
+      "cityName": "Onikisubat",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2026-05-12T20:55:49.930Z",
+      "notes": "",
+      "position": {
+        "lat": "37.54443498171864",
+        "lng": "36.764563990551906"
+      },
+      "id": "Nf2btaT6yHU"
+    },
+    {
+      "cityName": "Yuregir",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2026-05-13T14:16:49.395Z",
+      "notes": "yuregir",
+      "position": {
+        "lat": "36.99911005043862",
+        "lng": "35.35400390625001"
+      },
+      "id": "l9nJQJJnTlw"
+    },
+    {
+      "cityName": "Adana",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2026-05-13T14:17:57.633Z",
+      "notes": "",
+      "position": {
+        "lat": "37.05306165842011",
+        "lng": "35.29357910156251"
+      },
+      "id": "h51-rVjtBCw"
+    },
+    {
+      "cityName": "Adana",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2026-05-13T14:19:07.584Z",
+      "notes": "",
+      "position": {
+        "lat": "37.012009128620605",
+        "lng": "35.29083251953126"
+      },
+      "id": "VYvV_u7wpfc"
+    },
+    {
+      "cityName": "Pozanti",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2026-05-13T14:19:11.683Z",
+      "notes": "",
+      "position": {
+        "lat": "37.479140600979896",
+        "lng": "34.901039305477546"
+      },
+      "id": "Ifrz_DqZo5A"
+    },
+    {
+      "cityName": "Pozanti",
+      "country": "Turkiye",
+      "emoji": "TR",
+      "date": "2026-05-13T14:19:34.481Z",
+      "notes": "",
+      "position": {
+        "lat": "37.479140600979896",
+        "lng": "34.901039305477546"
+      },
+      "id": "5Mf_TBAT0PY"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
