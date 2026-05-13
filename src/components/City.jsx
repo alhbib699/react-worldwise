@@ -39,7 +39,16 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{flagEmojiToPNG(emoji)}</span> {cityName}
+          <span className={styles.emoji}>
+                    {emoji && emoji.length === 2 ? (
+                      <img 
+                        src={`https://flagcdn.com/24x18/${emoji.toLowerCase()}.png`} 
+                        alt="flag" 
+                      />
+                    ) : (
+                      flagEmojiToPNG(emoji)
+                    )}
+                  </span> {cityName}
         </h3>
       </div>
 

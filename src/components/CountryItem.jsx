@@ -14,7 +14,16 @@ const flagEmojiToPNG = (flag) => {
 function CountryItem({ country }) {
   return (
     <li className={styles.countryItem}>
-      <span>{flagEmojiToPNG(country.emoji)}</span>
+      <span className={styles.emoji}>
+                {country.emoji && country.emoji.length === 2 ? (
+                  <img 
+                    src={`https://flagcdn.com/24x18/${country.emoji.toLowerCase()}.png`} 
+                    alt="flag" 
+                  />
+                ) : (
+                  flagEmojiToPNG(country.emoji)
+                )}
+              </span>
       <span>{country.country}</span>
     </li>
   );
