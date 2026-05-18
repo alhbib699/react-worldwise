@@ -61,7 +61,7 @@ function Map() {
       )}
       <MapContainer
         center={mapPosition}
-        zoom={13}
+        zoom={10}
         scrollWheelZoom={true}
         className={styles.map}
       >
@@ -91,7 +91,6 @@ function Map() {
                 )}
               </span>{" "}
               <span>{city.cityName}</span>
-              <ChangeCenter position={mapPosition} />
             </Popup>
           </Marker>
         ))}
@@ -104,7 +103,11 @@ function Map() {
 
 function ChangeCenter({ position }) {
   const map = useMap();
-  map.flyTo(position);
+
+  useEffect(() => {
+    map.flyTo(position);
+  }, [map, position]);
+
   return null;
 }
 
