@@ -37,18 +37,6 @@
       "id": "98443197"
     },
     {
-      "cityName": "Vila de Rei",
-      "country": "Portugal",
-      "emoji": "PT",
-      "date": "2026-05-13T16:17:37.374Z",
-      "notes": "tst",
-      "position": {
-        "lat": "39.641457606949565",
-        "lng": "-8.096923828125002"
-      },
-      "id": "gpxMKhUYr60"
-    },
-    {
       "cityName": "Aleppo",
       "country": "Syrian Arab Republic (the)",
       "emoji": "SY",
@@ -59,6 +47,18 @@
         "lng": "37.14202880859376"
       },
       "id": "x7czKGfO6jU"
+    },
+    {
+      "cityName": "Darat ‘Izzah",
+      "country": "Syrian Arab Republic (the)",
+      "emoji": "SY",
+      "date": "2026-05-18T12:12:47.462Z",
+      "notes": "LOOOOOL",
+      "position": {
+        "lat": "36.27211503289513",
+        "lng": "36.97178034814575"
+      },
+      "id": "Vt5r51H-pRk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
